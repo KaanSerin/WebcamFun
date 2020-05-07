@@ -1,2 +1,2 @@
 # Webcam Fun
-<p>A cute and simplistic website where you can use your webcam to take pictures of yourself and add silly filter.<p>
+<p>A cute and simplistic website where you can use your webcam to take pictures of yourself and add silly filters.<p>
