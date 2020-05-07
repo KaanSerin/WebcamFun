@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Quicksand:500&display=swap" rel="stylesheet">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Webcam project</title>
+</head>
+
+<body>
+    <header>
+        <h1><a class="darkText" href="/WebcamFun">Webcam Fun</a></h1>
+        <img class="webcamIcon" src="images/camera.svg" alt="">
+    </header>
+    <main>
+        <div class="filtersPanel">
+            <div class="header">
+                <p class="darkText">Select your desired filter</p>
+            </div>
+            <div class=filters>
+                <div class="filter">
+                    <label class="darkText" for="no-filter">No-filter </label>
+                    <input type="radio" name="filter" id="none" checked>
+                </div>
+                <div class="filter">
+                    <label class="darkText" for="greyscale">Grayscale </label>
+                    <input type="radio" name="filter" id="grayscale(1)">
+                </div>
+                <div class="filter">
+                    <label class="darkText" for="greyscale">Sepia </label>
+                    <input type="radio" name="filter" id="sepia(1)">
+                </div>
+                <div class="filter">
+                    <label class="darkText" for="greyscale">Inverted </label>
+                    <input type="radio" name="filter" id="invert(1)">
+                </div>
+                <div class="filter">
+                    <label class="darkText" for="hue-rotate">Hue-Rotate </label>
+                    <input type="radio" name="filter" id="hue-rotate(90deg)">
+                </div>
+            </div>
+        </div>
+
+        <div class="videoAndPhoto">
+            <div class="camera">
+                <p>Webcam Feed</p>
+                <video id="video">Video stream not available.</video>
+                <div class="webcamControls">
+                    <button class="myButton" id="playButton">Play</button>
+                    <button class="myButton" id="takePicture">Take Picture</button>
+                    <button class="myButton" id="stopButton">Stop Video</button>
+                </div>
+            </div>
+            <div class="output">
+                <p>Picture Taken</p>
+                <img id="photo" alt="">
+                <div class="photoControls">
+                    <button class="myButton" id="saveButton">Save</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <p class="darkText"> © Kaan Serin 2020. All rights reserved</p>
+    </footer>
+
+    <!-- Canvas is used for off screen rendering -->
+    <canvas id="canvas">
+    </canvas>
+
+    <!-- DownloadJS -->
+    <script src="http://danml.com/js/download.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
