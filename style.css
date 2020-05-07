@@ -88,14 +88,14 @@ footer{
 }
 
 .myButton {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 	background:linear-gradient(to bottom, #fccdcd 5%, #ffbebe 100%);
 	background-color:#ffd0d0;
 	border-radius:25px;
 	border:1px solid #ffc2c2;
 	display:inline-block;
 	cursor:pointer;
-	padding:16px 31px;
+	padding:10px 20px;
 	text-decoration:none;
 }
 .myButton:hover {
